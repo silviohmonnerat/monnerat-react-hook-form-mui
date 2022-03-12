@@ -1,8 +1,8 @@
-# Material-UI and react-hook-form combined
+# Material-UI, React Hook Form and Yup Validation combined
 
 ## About this project
 
-This project simplifies the use of `react-hook-form` and `Material-UI`. It provides opinionated use cases with following components:
+This project simplifies the use of `react-hook-form`, `Material-UI` and `Yup`. It provides opinionated use cases with following components:
 
 - FormContainer
 - TextFieldElement
@@ -55,11 +55,11 @@ You can have a look at the `example` folder which sets up NextJS with `monnerat-
 The `<FormContainer />` wires up a form and you can create sub-components which either make use
 of `useFormContext() | useWatch()` to react to form values.
 
-## Demo
+<!-- ## Demo
 
 Check out Storybook: [Demo](https://react-hook-form-material-ui.vercel.app)
 
-You will find examples and use cases.
+You will find examples and use cases. -->
 
 ### With Datepicker
 

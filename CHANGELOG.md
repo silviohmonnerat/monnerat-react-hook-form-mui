@@ -7,8 +7,6 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-### Fixed
-
 ## [0.1.0] - 2022-03-12
 
 This project simplifies the use of `react-hook-form` and `Material-UI`. It provides opinionated use cases with following components:
