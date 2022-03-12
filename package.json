@@ -31,12 +31,14 @@
     "build": "rimraf dist && microbundle -f modern,esm,cjs --jsx React.createElement"
   },
   "peerDependencies": {
+    "@hookform/resolvers": "^2.8.8",
     "@mui/icons-material": ">= 5.x <6",
     "@mui/lab": ">= 5.x <6",
     "@mui/material": "> 5.x <6",
     "react": ">=17",
     "react-hook-form": ">=7.3.5",
-    "typescript": ">= 4.1"
+    "typescript": ">= 4.1",
+    "yup": "^0.32.11"
   },
   "prettier": {
     "printWidth": 80,
@@ -53,6 +55,7 @@
     "@emotion/react": "latest",
     "@emotion/server": "latest",
     "@emotion/styled": "latest",
+    "@hookform/resolvers": "^2.8.8",
     "@mui/icons-material": "^5.4.2",
     "@mui/lab": "^5.0.0-alpha.70",
     "@mui/material": "^5.4.3",
@@ -74,6 +77,7 @@
     "ts-loader": "^9.2.6",
     "tslib": "^2.3.1",
     "typescript": "^4.5.5",
-    "webpack": "^5.69.1"
+    "webpack": "^5.69.1",
+    "yup": "^0.32.11"
   }
 }
