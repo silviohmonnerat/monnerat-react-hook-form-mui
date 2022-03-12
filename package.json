@@ -1,21 +1,78 @@
 {
-  "name": "rts-form-hook",
-  "private": true,
-  "version": "0.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+  "name": "react-hook-form-mui",
+  "version": "0.1.0",
+  "license": "MIT",
+  "repository": "https://github.com/silviohmonnerat/rts-form-hook.git",
+  "keywords": [
+    "react",
+    "mui",
+    "material-ui",
+    "react-hook-form"
+  ],
+  "author": "Silvio Monnerat",
+  "source": "src/index.ts",
+  "main": "dist/react-form-hook-mui.js",
+  "module": "dist/react-form-hook-mui.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=14"
   },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+  "scripts": {
+    "prepare": "npm run build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "check-types": "tsc --noemit",
+    "deploy": "npm run build-storybook && cd storybook-static && vercel --name react-hook-form-material-ui --prod",
+    "build": "rimraf dist && microbundle -f modern,esm,cjs --jsx React.createElement"
+  },
+  "peerDependencies": {
+    "@mui/icons-material": ">= 5.x <6",
+    "@mui/lab": ">= 5.x <6",
+    "@mui/material": "> 5.x <6",
+    "react": ">=17",
+    "react-hook-form": ">=7.3.5",
+    "typescript": ">= 4.1"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
   },
   "devDependencies": {
-    "@types/react": "^17.0.33",
-    "@types/react-dom": "^17.0.10",
-    "@vitejs/plugin-react": "^1.0.7",
-    "typescript": "^4.5.4",
-    "vite": "^2.8.0"
+    "@babel/core": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@date-io/date-fns": "^2.13.1",
+    "@date-io/dayjs": "^2.13.1",
+    "@emotion/cache": "latest",
+    "@emotion/react": "latest",
+    "@emotion/server": "latest",
+    "@emotion/styled": "latest",
+    "@mui/icons-material": "^5.4.2",
+    "@mui/lab": "^5.0.0-alpha.70",
+    "@mui/material": "^5.4.3",
+    "@storybook/addon-essentials": "6.4.19",
+    "@storybook/addon-knobs": "6.4.0",
+    "@storybook/builder-webpack5": "6.4.19",
+    "@storybook/react": "6.4.19",
+    "@types/react": "^17.0.39",
+    "@types/react-dom": "^17.0.11",
+    "babel-loader": "^8.2.3",
+    "date-fns": "^2.28.0",
+    "microbundle": "^0.14.2",
+    "mutation-observer": "^1.0.3",
+    "react": "^17.0.2",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.27.1",
+    "react-is": "^17.0.2",
+    "ts-loader": "^9.2.6",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.5",
+    "webpack": "^5.69.1"
   }
 }
